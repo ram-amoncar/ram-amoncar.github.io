@@ -1,0 +1,293 @@
+html,
+body {
+    margin: 0;
+    background-color: #202237;
+    font-family: "Lexend", sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    background-color: rgba(29, 31, 50, 0.8);
+    margin-inline: 5px;
+    border-radius: 0 0 10px 10px;
+    padding: 1.5% 2.5%;
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    color: white;
+    align-items: center;
+    user-select: none;
+
+}
+
+.nav-left {
+    width: 100%;
+}
+
+.nav-right {
+    margin: 1%;
+    text-align: end;
+}
+
+.nav-right:hover {
+    color: red;
+}
+
+.colored-red {
+    color: red;
+}
+
+#my-name {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.profile-image {
+    max-width: 40%;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+.content h1 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.4;
+    color: white;
+}
+
+.content .highlight {
+    color: #ff6f61;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+    font-family: inherit;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-item {
+    width: 12px;
+    height: 12px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 3rem;
+    background-color: #ff6f61;
+}
+
+.skill-set-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin: 0.5rem 0;
+}
+
+.underline {
+    width: 5rem;
+    height: 3px;
+    background-color: #ff6f61;
+    margin: 0.5rem auto;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.skill-card {
+    background-color: #2a2d3e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff6f61;
+}
+
+.skill-card h3 {
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+/* Connect section styles */
+.connect-section {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.connect-header h2 {
+    font-size: 2rem;
+    color: #ff5757;
+    margin-bottom: 20px;
+}
+
+.connect-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.connect-form input,
+.connect-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #252634;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.connect-form input::placeholder,
+.connect-form textarea::placeholder {
+    color: #aaa;
+}
+
+.connect-form button {
+    padding: 10px 20px;
+    background-color: #ff5757;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-form button:hover {
+    background-color: #ff6a6a;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #252634;
+    color: white;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #ff5757;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff6a6a;
+    transform: scale(1.1);
+}
+
+/* Footer copyright text */
+.footer p:last-child {
+    font-size: 0.9rem;
+    color: #aaa;
+}
